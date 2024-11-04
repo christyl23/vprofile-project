@@ -4,7 +4,7 @@ services:
     build: 
       context: ./Docker-files/db
     image: christyl2023/vprofiledb3
-    container_name: vprofiledb3  
+    container_name: vprodb3  
     ports:
       -  "3306:3306"
     volumes:
@@ -29,7 +29,7 @@ services:
     build: 
       context: ./Docker-files/app
     image: christyl2023/vprofileapp3
-    container_name: vprofileapp3  
+    container_name: vproapp3  
     ports:
       -  "8080:8080"
     volumes:
@@ -39,7 +39,7 @@ services:
     build: 
       context: ./Docker-files/web
     image: christyl2023/vprofileweb3
-    container_name: vprofileweb3
+    container_name: vproweb3
     ports:
       -  "80:80"
 
